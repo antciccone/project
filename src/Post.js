@@ -3,10 +3,20 @@ import './App.css';
 
 
 class Post extends Component {
+  fixName(name){
+    return name.split('.').join(' ')
+  }
   render() {
+    const post = this.props.attributes
     return (
       <div>
-        <img className="picture-profile" src={this.props.attributes.pic}/>
+        <div className="content">
+          <img alt="" className="picture-profile" src={post.pic}/>
+          <h3>{post.message}</h3>
+        </div>
+        <h3 className="name">{this.fixName(post.username)}</h3>
+        <h3 className='user-agent'>{post.useragent}</h3>
+        <p className="date">{post.date}</p>
       </div>
     )
   }

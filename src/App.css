@@ -2,3 +2,27 @@
 .title {
   text-align: center;
 }
+
+.picture-profile {
+  border-radius: 50%;
+}
+
+.content {
+    width: 400px;
+    overflow: hidden;
+}
+
+.content img {
+  margin-right: 15px;
+  float: left;
+}
+
+.name {
+  text-transform:capitalize;
+  margin-left: 65px;
+
+}
+
+.user-agent, .date {
+  margin-left: 65px;
+}

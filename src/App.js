@@ -4,11 +4,9 @@ import Title from './Title';
 import Post from './Post';
 import axios from 'axios';
 
-
 class App extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {posts: []}
   }
 
