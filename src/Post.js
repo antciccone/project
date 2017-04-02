@@ -9,7 +9,7 @@ class Post extends Component {
   }
 
   formatDate(date){
-    return date
+    return <Moment className='date'>{date}</Moment>
   }
   render() {
     const post = this.props.attributes
@@ -21,7 +21,8 @@ class Post extends Component {
         </div>
         <h3 className='name'>{this.formatName(post.username)}</h3>
         <h3 className='user-agent'>{post.useragent}</h3>
-        <Moment className='date'>{post.date}</Moment>
+        <p>{this.formatDate(post.date)}</p>
+      </div>
     )
   }
 }
