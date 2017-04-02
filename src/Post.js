@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Moment from 'react-moment';
 
 
 class Post extends Component {
@@ -8,20 +9,19 @@ class Post extends Component {
   }
 
   formatDate(date){
-    
+    return date
   }
   render() {
     const post = this.props.attributes
     return (
-      <div>
-        <div className="content">
-          <img alt="" className="picture-profile" src={post.pic}/>
+      <div className="container">
+        <div className='content'>
+          <img alt='' className='picture-profile' src={post.pic}/>
           <h3>{post.message}</h3>
         </div>
-        <h3 className="name">{this.formatName(post.username)}</h3>
+        <h3 className='name'>{this.formatName(post.username)}</h3>
         <h3 className='user-agent'>{post.useragent}</h3>
-        <p className="date">{this.formatDate(post.date)}</p>
-      </div>
+        <Moment className='date'>{post.date}</Moment>
     )
   }
 }
