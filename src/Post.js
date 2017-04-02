@@ -4,7 +4,7 @@ import './App.css';
 
 class Post extends Component {
   formatName(name){
-    return name.split('.').join(' ')
+    return name.split('.').join(' ').replace(/[0-9]/g, '')
   }
   render() {
     const post = this.props.attributes
