@@ -3,7 +3,7 @@ import './App.css';
 
 
 class Post extends Component {
-  fixName(name){
+  formatName(name){
     return name.split('.').join(' ')
   }
   render() {
@@ -14,7 +14,7 @@ class Post extends Component {
           <img alt="" className="picture-profile" src={post.pic}/>
           <h3>{post.message}</h3>
         </div>
-        <h3 className="name">{this.fixName(post.username)}</h3>
+        <h3 className="name">{this.formatName(post.username)}</h3>
         <h3 className='user-agent'>{post.useragent}</h3>
         <p className="date">{post.date}</p>
       </div>
