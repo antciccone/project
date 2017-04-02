@@ -6,6 +6,10 @@ class Post extends Component {
   formatName(name){
     return name.split('.').join(' ').replace(/[0-9]/g, '')
   }
+
+  formatDate(date){
+    
+  }
   render() {
     const post = this.props.attributes
     return (
@@ -16,7 +20,7 @@ class Post extends Component {
         </div>
         <h3 className="name">{this.formatName(post.username)}</h3>
         <h3 className='user-agent'>{post.useragent}</h3>
-        <p className="date">{post.date}</p>
+        <p className="date">{this.formatDate(post.date)}</p>
       </div>
     )
   }
