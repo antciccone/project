@@ -11,7 +11,12 @@ I created this application using create-react-app. I used axios to make the api 
 ```shell
   npm install
 ```
-2. Running the server (should open http://localhost:3000/ in your browser automatically)
+2.
+```shell
+  npm install axios
+```
+
+3. Running the server (should open http://localhost:3000/ in your browser automatically)
 ```
 npm start
 ```
