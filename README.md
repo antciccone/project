@@ -11,7 +11,7 @@ I created this application using create-react-app. I used axios to make the api 
 ```shell
   npm install
 ```
-2.
+2. Install axios
 ```shell
   npm install axios
 ```
